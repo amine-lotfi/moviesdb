@@ -21,7 +21,7 @@ searchButton.addEventListener("click", () => {
 
     } else {
 
-        let APIUrl = `http://www.omdbapi.com/?apikey=${APIKey}&t=${searchInput.value}`;
+        let APIUrl = `https://www.omdbapi.com/?apikey=${APIKey}&t=${searchInput.value}`;
 
         fetch(APIUrl)
             .then((response) => response.json())
